@@ -3,7 +3,6 @@ const users = {
   alex: { name: "Alex", bio: "Tech enthusiast 💻 | Vloger  📷", avatar: "https://i.pravatar.cc/150?img=3" },
   john: { name: "John", bio: "Traveler ✈️ | Photographer 📷", avatar: "https://i.pravatar.cc/150?img=5" },
   sara: { name: "Sara", bio: "Foodie 🍕 | Designer 🎨", avatar: "https://i.pravatar.cc/150?img=9" },
-  shakil: { name: "shakil salmani", bio: "Full Stack Developer", avatar: "../photo/Shakil photo.jpg" },
 };
 
 // --- DOM Elements ---
@@ -216,3 +215,4 @@ resetBtn.addEventListener("click", ()=>{
 function savePosts(){ localStorage.setItem("posts", JSON.stringify(posts)); }
 
 renderPosts();
+
