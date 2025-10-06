@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Social Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🌐 Mini Social</div>
+    <div class="controls">
+      <select id="userSelect"></select>
+      <input type="text" id="searchInput" placeholder="Search user...">
+      <button id="searchBtn">🔍</button>
+      <button id="resetBtn">🗑 Reset</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="create-post create-post2">
+        <h2>Your Profile</h2>
+      <div class="user-info">
+        <img id="userAvatar" src="" alt="avatar">
+        <div>
+          <h3 id="userName"></h3>
+          <small>Bio, </small>
+          <small id="userBio"></small>
+        </div>
+      </div>
+      
+      <textarea id="postText" maxlength="280" placeholder="What's on your mind?"></textarea>
+      <div class="choice">
+
+        <input type="file" id="postImage" accept="image/*">
+        <button id="createPost">Uplode Post</button>
+
+      </div>
+     
+    </section>
+    
+    <section id="profileSection" class="hidden"></section>
+    <section id="feed" class="feed"></section>
+
+  </main>
+
+  <footer>💻 Built with HTML • CSS • JS • LocalStorage</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

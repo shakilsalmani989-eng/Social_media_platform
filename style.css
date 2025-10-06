@@ -1,0 +1,329 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #e9ebee;
+  margin: 0;
+}
+
+header {
+  background: #1877f2;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+input[type="text"], select {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: #145dc0;
+  color: #fff;
+  transition: 0.2s;
+}
+
+header select
+{
+    width: 100px;
+    text-align: center;
+}
+
+header #searchBtn
+{
+    width: 50px;
+    background: #fff;
+}
+
+
+ header #searchBtn:hover
+{
+    background: black;
+}
+
+button:hover {
+  background: #0e4ba1;
+}
+
+main
+{   
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 50px;
+}
+
+section h2{
+    margin-top: 0px;
+    color: #cfcbcb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.create-post {
+    position: sticky;
+    top: 50px;
+    background: #fff;
+    height: 400px;
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.create-post
+{
+  margin-left: 10px;
+  width: 500px;
+}
+
+section .create-post
+{
+    height: 200px;
+    position: relative;
+    top: 0;
+    width: 520px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+textarea {
+  width: 95%;
+  height: 60px;
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+section .choice
+{
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section #createPost
+{
+    width: 100px;
+}
+
+
+.feed, #profileSection {
+  width: 90%;
+  max-width: 600px;
+}
+
+#profileSection
+{  
+  margin-top: 0;
+  margin-left: 300px; 
+  /*margin: auto;*/
+  width:600vw;
+}
+
+.post {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 30px 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.comment-section {
+  background: #f5f6f7;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.comment {
+  background: white;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.hidden {
+ display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  color: #555;
+}
+
+
+/* 🌐 RESPONSIVE DESIGN SECTION */
+
+/* Tablets & Medium Devices */
+@media (max-width: 1024px) {
+ main {
+    flex-direction: column;
+    align-items: self-start;
+  }
+
+  .create-post{
+    width: 95%;
+    max-width: 600px;
+    position: relative;
+    top: 10px;
+  }
+
+  .feed, #profileSection 
+  {
+    margin-left: 5px;
+  }
+
+  .post
+  {
+    margin-left: 10px;
+  }
+
+  section .create-post
+{
+    height: 200px;
+    position: relative;
+    top: 0;
+    margin: 20px auto;
+    width: 520px;
+}
+
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .controls {
+    width: 100%;
+    justify-content: space-between;
+  }  
+}
+
+
+
+
+/* 📱 Mobile Devices */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+
+  .create-post, .feed, #profileSection {
+    position: relative;
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  .choice {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  #createPost {
+    width: 100%;
+  }
+
+  textarea {
+    width: 95%;
+  }
+}
+
+
+
+/* 📱 Extra Small Devices (under 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+  }
+
+  input[type="text"], select, button {
+    width: 100%;
+  }
+
+  .create-post, .feed {
+    margin: 10px auto;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}
