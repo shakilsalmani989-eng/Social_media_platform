@@ -4,6 +4,8 @@ body {
   margin: 0;
 }
 
+/* Start Dashboard.html */
+
 header {
   background: #1877f2;
   color: #fff;
@@ -146,6 +148,11 @@ section #createPost
     width: 100px;
 }
 
+section .create-post h2{
+  margin: 0px 0px;
+  color: #cfcbcb;
+}
+
 
 .feed, #profileSection {
   width: 90%;
@@ -237,7 +244,7 @@ footer {
     position: relative;
     top: 0;
     margin: 20px auto;
-    width: 520px;
+    width: 350px;
 }
 
 
@@ -251,6 +258,7 @@ footer {
     width: 100%;
     justify-content: space-between;
   }  
+
 }
 
 
@@ -278,7 +286,7 @@ footer {
 
   .create-post, .feed, #profileSection {
     position: relative;
-    width: 95%;
+    width: 90%;
     margin: 10px auto;
   }
 
