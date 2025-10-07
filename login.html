@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+
+<style>
+/* ===== Reset & Body ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+  color: #fff;
+  padding: 20px; 
+  transition: background-color 0.9s, color 0.8s;
+}
+
+body.light
+{
+  background: #fff;
+}
+
+/* ===== Login Container ===== */
+.login-container {
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container #mode
+{
+  position:relative;
+  top: -25px;
+
+}
+
+#mode
+{
+  align-self: self-end;
+  padding: 0;
+  margin: 0;
+  width: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+}
+
+
+/* ===== Headings ===== */
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* ===== Inputs ===== */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  /*margin-top: 12px;*/
+  margin: 10px 0px;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* ===== Button ===== */
+button {
+  width: 50%;
+  padding: 12px;
+  /*margin-top: 20px;*/
+  margin: auto;
+  background: #00aaff;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #0077cc;
+}
+
+/* ===== Paragraph ===== */
+p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+/* ===== Anchor ===== */
+a {
+  color: #00aaff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 1.5rem;
+    max-width: 350px;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  input, button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+.login-container #mode
+{
+  position:relative;
+  top: -15px;
+
+}
+
+#mode
+{
+  font-size: 1rem;
+}
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 15px;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  input, button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="login-container">
+    <button id="mode">☀️</button>
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <a href="index.html">Sign Up</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
